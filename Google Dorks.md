@@ -1,19 +1,12 @@
    Google Dorks
 
 # Google Hacking made easy
-https://pentest-tools.com/information-gathering/google-hacking#
-
-
-
-
-
 llintext:"Copperfasten Technologies" "Login"
-
- 
 
 allintext:"Index Of" "cookies.txt"
 
 allintext:@gmail.com filetype:log
+
 ext:php intitle:phpinfo "published by the PHP Group"
 
 ext:sql | ext:txt intext:"-- phpMyAdmin SQL Dump --" + intext:"admin"
@@ -32,11 +25,9 @@ intext:"Incom CMS 2.0"
 
 intext:"SonarQube" + "by SonarSource SA." + "LGPL v3"
 
-
 intext:"user name" intext:"orion core" -solarwinds.com
 
 intext:construct('mysql:host
-
 
 intitle:"Agent web client: Phone Login"
 
@@ -47,7 +38,6 @@ intitle:"Humatrix 8"
 intitle:"Insurance Admin Login" | "(c) Copyright 2020 Cityline Websites. All Rights Reserved." | "http://www.citylinewebsites.com"
 
 intitle:"NetCamSC*"
-
 
 intitle:"NetCamSC*" | intitle:"NetCamXL*" inurl:index.html
 
@@ -132,9 +122,7 @@ site:password.*.* intitle:"login"
 
 site:portal.*.* intitle:"login"
 
-
 site:sftp.*.*/ intext:"login" intitle:"server login"
-
 
 site:user.*.* intitle:"login"
 
